@@ -1,0 +1,99 @@
+html,body{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contaner{
+    background-color: aqua;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game{
+    height:300px;
+     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+}
+.box{ 
+    height:98px;
+    width:98px;
+    border-radius: 15px;
+    border: none;
+    font-size:30px;
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0  5px black;
+}
+.box:active{
+    transition: all;
+    transform: scale(0.9);
+    transition-duration:0.2ms;
+    background-color: rgb(163, 140, 9);
+}
+.box:hover{
+    transition: all;
+    transform: scale(0.9);
+    transition-duration:0.2ms;
+    background-color: rgb(163, 140, 9);
+}
+.reset{
+    height: 40px;
+    width: 80px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size:17px;
+    background-color:black;
+    border: 1.5px solid black;
+    color: white;
+}
+.reset:active{
+    background-color: white;
+    transition: all;
+    transform: scale(0.9);
+    transition-duration:5ms;
+    color: black;
+    font-size: 17px;
+}
+.winner{
+    background-color:transparent;
+    height: 200px;
+    width: 100%;
+    z-index:2;
+    position:absolute;
+    top: 135px;
+    border:1.5px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+p{
+    top: 40px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.a{
+    height: 40px;
+    width: 140px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    margin-top:30px;
+}
+#audio{
+    display: none;
+}
+
+
